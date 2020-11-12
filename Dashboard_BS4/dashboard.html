@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dashboard.css">
+
+    <title>Dashboard with Bootstrap</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-primary fixed-top flex-md-nowrap p-0 shadow">
+      <ul class="nav justify-content-center">
+        <li class="nav-item text-nowrap"><a href="#" class="nav-link">sobre</a></li>
+        <li class="nav-item text-nowrap"><a href="#" class="nav-link">contato</a></li>
+      </ul>
+      <div>
+        <img src="./gamegesislogolight.svg" width="25px" height="50px" />amegesis
+      </div>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a href="#" class="nav-link">
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+              <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- Container -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-2 bg-light d-none d-md-block sidebar">
+          <div class="left-sidebar">
+            <!-- Accordion Menu -->
+            <div class="accordion" id="sidebar_functions">
+              <!-- Accordion Item -->
+              <div class="card">
+                <!-- Accordion Header -->
+                <div class="card-header" id="headingOne">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Games
+                    </button>
+                </div>
+                <!-- Accordion Content -->
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#sidebar_functions">
+                  <div class="card-body">
+                    <!-- Games List -->
+                    <div style="overflow-y: auto;">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Pacman</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Tetris</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Space Invaders</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Xadrez</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Battle Chess</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Accordion Item -->
+              <div class="card">
+                <!-- Accordion Header -->
+                <div class="card-header" id="headingOne">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      My Games
+                    </button>
+                </div>
+                <!-- Accordion Content -->
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#sidebar_functions">
+                  <div class="card-body">
+                    <!-- My Games List -->
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Pacman</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Tetris</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item -->
+              <div class="card">
+                <!-- Accordion Header -->
+                <div class="card-header" id="headingOne">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      Friends
+                    </button>
+                </div>
+                <!-- Accordion Content -->
+                <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar_functions">
+                  <div class="card-body">
+                    <!-- Friends List -->
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">João</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">José</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main -->
+        <main class="col-md-9 ml-sm-auto col-lf-10 px-4" role="main">
+          <h3>Candidates</h3>
+          <div class="table-responsive">
+            <table class="table table-sm table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Ocupation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>Analist</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>Programmer</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>Project Manager</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Invoices</h3>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Invoice #1</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Print</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Invoice #2</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Print</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Invoice #3</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Print</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Invoice #4</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Print</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

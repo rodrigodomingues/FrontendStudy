@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link the font-awesome references to be used -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+
+    <!-- The styles used for the page. The main style and the responsive diff -->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!-- The styles used by the JQuery Carousel plugin. Scripts needed added in the end of the document -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>Netflix Interface Clone</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">SPYFLIX</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">Hora de Aventura</h3>
+                <p class="descricao">A aventura, vai começar. Todos juntos vamos visitar o mundo de Jake e seu amigo Finn, na terra de Ooo agora é hora de Aventura!.</p>
+                <div class="botoes">
+                    <button class="botao" role="button">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button class="botao" role="button">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÔES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- The Carousel section -->
+    <div class="carrosel-filmes">
+        <!-- The mandatory section for the carousel plugin -->
+        <div class="owl-carousel owl-theme">
+            <!-- items for the carousel content -->
+            <div class="item">
+                <img class="box-filme" src="img/mini01.jpg" alt="Filme 01">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini02.jpg" alt="Filme 02">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini03.jpg" alt="Filme 03">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini04.jpg" alt="Filme 04">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini05.jpg" alt="Filme 05">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini06.jpg" alt="Filme 06">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini07.jpg" alt="Filme 07">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini08.jpg" alt="Filme 08">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini09.jpg" alt="Filme 09">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="Filme 10">
+            </div>
+        </div>
+    </div>
+
+    <!-- Plugins needed by the Carousel plugin. -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+
+    <!-- Carousel configuration Plugin -->
+    <script src="js/owl/main.js"></script>
+</body>
+</html>
