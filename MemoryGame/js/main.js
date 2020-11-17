@@ -9,6 +9,7 @@ const gameState = {
 }
 
 function shuffleArray(arr){
+    // Fisher-Yates Algorithm
     for(let i=arr.length - 1; i > 0; i--){
         // grab a random position
         const p = Math.floor(Math.random() * i);
